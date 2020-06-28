@@ -1,0 +1,12 @@
+body{
+  font-family: 'Comfortaa', cursive;
+  background: rgb(252,240,178);
+background: radial-gradient(circle, rgba(252,240,178,1) 13%, rgba(20,205,242,1) 100%);
+}
+#header-title{
+  font-family: 'MuseoModerno', cursive;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 50px;
+  color: #f56e07;
+}
