@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Your Personal Library</title>
-    <link rel="stylesheet" href="main.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=MuseoModerno:wght@900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-  <div id="header-title">
-    Your Personal Library
-  </div>
-</header>
+<head>
+  <meta charset="utf-8">
+  <title>Your Personal Library</title>
+  <link rel="stylesheet" href="main.css">
 
-<main>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=MuseoModerno:wght@900&display=swap" rel="stylesheet">
+</head>
 
-</main>
-<script type="text/javascript" src="main.js">
+<body>
+  <header>
+    <div id="header-title">
+      <a href="#">Your Personal Library</a>
+    </div>
+  </header>
 
-</script>
+  <main>
+    <div class="picture-container">
+      <div class="input-fields">
+        <input id="book-title" type="text" name="text-box1" placeholder="Book Title" required>
+        <label for="text-box1"></label>
+        <input id="author" type="text" name="text-box2" placeholder="Author" required>
+        <label for="text-box2"></label>
+        <input id="pages" type="text" name="text-box3" placeholder="Number of Pages" required>
+        <label for="text-box3"></label>
+        <input id="read" type="radio" name="read-yet" value="1" checked>
+        <label for="read">Read</label>
+        <input id="not-read" type="radio" name="read-yet" value="-1">
+        <label for="not-read">Not Read</label>
+        <div>
+          <button class="button-div" type="button" name="button">Add Book</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <table id="library-container">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Status</th>
+          <th>Change Status</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="library-containers">
+
+      </tbody>
+
+    </table>
+
+
+  </main>
+  <script type="text/javascript" src="main.js">
+
+  </script>
 </body>
 
 </html>
